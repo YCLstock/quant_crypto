@@ -1,0 +1,52 @@
+讓我先修正 `use-volatility-data.ts` 的類型問題：
+
+```typescript
+// src/hooks/use-volatility-data.ts
+import { useQuery } from '@tanstack/react-query'
+目前在完成的目標（Volatility Analysis 頁面）：
+
+1. 頁面結構：
+   - Control Panel：
+     - 交易對選擇
+     - 時間週期選擇
+     - 價格顯示開關
+
+   - Main Chart Section：
+     - 波動率趨勢圖（主圖表）
+     - 可選顯示價格曲線
+     - 互動式提示框
+
+   - Statistics Section：
+     - 當前波動率
+     - 波動點數
+     - 統計數據（最大、最小、平均值）
+     - 趨勢指標
+
+   - Distribution Section：
+     - 波動率分布圖
+     - 百分位數分析
+
+2. 功能特點：
+   - 即時數據更新（每分鐘）
+   - 響應式設計
+   - 數據可視化
+   - 統計分析
+
+3. 技術實現：
+   - 使用 React Query 管理數據
+   - Recharts 處理圖表
+   - Zustand 管理狀態
+   - TypeScript 類型安全
+
+4. 數據流：
+   - API 獲取歷史波動率數據
+   - 前端計算波動點數
+   - 實時更新和緩存策略
+
+這個頁面的主要目的是：
+1. 提供詳細的波動率分析工具
+2. 支持交易決策
+3. 呈現歷史趨勢和當前市場狀態
+4. 結合價格數據提供更完整的市場視角
+
+還需要實現或調整其他功能嗎？

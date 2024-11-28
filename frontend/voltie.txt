@@ -1,0 +1,99 @@
+讓我詳細解釋 Volatility Analysis (波動率分析) 頁面的功能和目的：
+
+1. 頁面主要功能：
+```plaintext
+Volatility Analysis Page
+├── Control Panel (控制面板)
+│   ├── Trading Pair Selection (交易對選擇，如 BTC/USDT)
+│   ├── Timeframe Selection (時間週期選擇，如 1h/4h/1d)
+│   └── Price Toggle (價格顯示開關)
+│
+├── Main Chart (主圖表區)
+│   ├── Volatility Trend Line (波動率趨勢線)
+│   ├── Optional Price Line (可選的價格線)
+│   ├── Interactive Tooltip (互動提示框)
+│   └── Dual Y-axes (雙Y軸：波動率和價格)
+│
+├── Statistics Panel (統計面板)
+│   ├── Current Volatility (當前波動率)
+│   ├── Volatility Points (波動點數)
+│   ├── Historical Stats (歷史統計)
+│   └── Trend Indicators (趨勢指標)
+│
+└── Distribution Analysis (分布分析)
+    ├── Volatility Distribution (波動率分布)
+    └── Percentile Analysis (百分位分析)
+```
+
+2. 數據流向：
+```plaintext
+API Data → React Query Cache → Store → Components
+↓
+使用者操作 (如切換交易對) → Store 更新 → 重新獲取數據 → 更新視圖
+```
+
+3. 重要組件解釋：
+
+**Control Panel (`control-panel/index.tsx`)**
+- 用於控制整個頁面的數據顯示
+- 包含交易對選擇（如 BTC/USDT）
+- 時間週期選擇（1h、4h、1d）
+- 價格顯示的開關（可以切換是否顯示價格曲線）
+
+**Main Chart (`trend-chart/chart.tsx`)**
+- 主要的波動率趨勢圖表
+- 使用 Recharts 庫實現
+- 可以同時顯示波動率和價格
+- 提供互動式提示框顯示詳細數據
+
+**Statistics Panel (`statistics/index.tsx`)**
+- 顯示當前和歷史波動率數據
+- 計算並展示波動點數
+- 提供均值、最大值、最小值等統計數據
+- 顯示趨勢方向指標
+
+4. 數據處理：
+- 使用 React Query 進行數據獲取和緩存
+- 每分鐘自動更新數據
+- 在前端計算波動點數
+- 提供數據格式化和清理
+
+5. 使用場景：
+- 交易者分析市場波動性
+- 評估當前市場風險水平
+- 比較不同時間週期的波動情況
+- 結合價格數據進行深入分析
+
+6. 特色功能：
+- 即時數據更新
+- 互動式圖表
+- 靈活的數據視圖切換
+- 完整的統計分析
+- 響應式設計
+
+7. 技術實現：
+```typescript
+// 數據獲取和緩存
+useQuery<VolatilityData[], Error>({
+  queryKey: ['volatility-history', selectedPair, selectedTimeframe],
+  queryFn: async () => {
+    const response = await marketAnalysisApi.getVolatilityHistory(...)
+    return response
+  },
+  refetchInterval: 60000  // 每分鐘更新
+})
+
+// 狀態管理
+const useVolatilityStore = create<VolatilityState>((set) => ({
+  showPrice: false,
+  toggleShowPrice: () => set((state) => ({ showPrice: !state.showPrice }))
+}))
+```
+
+8. 主要用途：
+- 市場波動分析
+- 風險評估
+- 趨勢識別
+- 交易決策支持
+
+整體來說，這個頁面為用戶提供了一個完整的波動率分析工具，幫助他們更好地理解和分析市場波動情況，從而做出更明智的交易決策。
