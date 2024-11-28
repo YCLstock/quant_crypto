@@ -1,0 +1,87 @@
+frontend/
+├── src/
+│   ├── app/                      # Next.js App Router
+│   │   ├── layout.tsx            # Root layout
+│   │   ├── providers.tsx         # 全局 Provider
+│   │   ├── market-analysis/      # 市場分析頁面(歷史數據)
+│   │   │   ├── layout.tsx
+│   │   │   └── page.tsx
+│   │   └── monitor/             # 新增：實時監控頁面
+│   │       ├── layout.tsx
+│   │       └── page.tsx
+│   │
+│   ├── components/
+│   │   ├── ui/                  # 基礎 UI 組件
+│   │   │   ├── button.tsx
+│   │   │   ├── card.tsx
+│   │   │   ├── select.tsx
+│   │   │   ├── alert.tsx       # 新增：告警組件
+│   │   │   └── ...
+│   │   │
+│   │   ├── market-analysis/     # 歷史分析組件
+│   │   │   ├── control-panel/
+│   │   │   ├── volatility/
+│   │   │   └── market-state/
+│   │   │
+│   │   └── monitor/            # 新增：監控組件
+│   │       ├── price-alerts/   # 價格告警
+│   │       │   ├── alert-form.tsx
+│   │       │   └── alert-list.tsx
+│   │       ├── volatility-monitor/ # 波動率監控
+│   │       │   ├── real-time-chart.tsx
+│   │       │   └── threshold-settings.tsx
+│   │       ├── volume-monitor/  # 交易量監控
+│   │       │   ├── volume-chart.tsx
+│   │       │   └── anomaly-detector.tsx
+│   │       └── notifications/   # 通知中心
+│   │           ├── notification-list.tsx
+│   │           └── notification-settings.tsx
+│   │
+│   ├── hooks/
+│   │   ├── use-market-data.ts
+│   │   ├── use-volatility.ts
+│   │   ├── use-websocket.ts    # 新增：WebSocket Hook
+│   │   └── use-notifications.ts # 新增：通知 Hook
+│   │
+│   ├── lib/
+│   │   ├── utils.ts
+│   │   ├── axios-instance.ts
+│   │   └── websocket/          # 新增：WebSocket 相關
+│   │       ├── client.ts       # WebSocket 客戶端
+│   │       ├── connection-manager.ts # 連接管理
+│   │       └── message-handlers.ts   # 消息處理器
+│   │
+│   ├── services/
+│   │   ├── market-analysis/    # 歷史數據服務
+│   │   │   ├── types.ts
+│   │   │   └── api.ts
+│   │   └── monitor/           # 新增：監控服務
+│   │       ├── websocket-api.ts
+│   │       ├── alert-service.ts
+│   │       └── notification-service.ts
+│   │
+│   ├── stores/
+│   │   ├── market-analysis/    # 歷史數據狀態
+│   │   │   └── store.ts
+│   │   └── monitor/           # 新增：監控狀態
+│   │       ├── alert-store.ts
+│   │       ├── price-store.ts
+│   │       └── notification-store.ts
+│   │
+│   ├── types/
+│   │   ├── market.ts
+│   │   ├── monitor.ts         # 新增：監控相關類型
+│   │   └── websocket.ts       # 新增：WebSocket 類型
+│   │
+│   └── config/               # 新增：配置文件
+│       ├── websocket.ts      # WebSocket 配置
+│       └── monitor.ts        # 監控配置
+│
+├── public/
+│
+├── .env                      # 環境變量
+├── .env.local               # 本地環境變量
+├── next.config.js
+├── tailwind.config.js
+├── tsconfig.json
+└── package.json

@@ -1,0 +1,120 @@
+(venv) PS D:\AI\quant_finance\crypto-analytics\backend> python scripts/test_api.py
+
+Testing market_analysis...
+Error testing market_analysis: All connection attempts failed
+
+Testing volatility_regimes...
+Error testing volatility_regimes: All connection attempts failed
+(venv) PS D:\AI\quant_finance\crypto-analytics\backend> python scripts/test_api.py
+
+Testing market_analysis...
+Status: 200
+{
+  "timestamp": "2024-11-16T13:03:49.34299",
+  "volatility_regime": null,
+  "volatility_percentile": null,
+  "volatility_zscore": null,
+  "trend_analysis": {
+    "direction": "Uptrend",
+    "strength": 1.2615579465649729,
+    "duration": 6488,
+    "price_change_pct": 42.60782678488768
+  },
+  "regime_analysis": {
+    "regime": "Extremely High",
+    "zscore": 2.8473198628004903,
+    "percentile": 99.99999999999999,
+    "description": "Current volatility is Extremely High (100.0th percentile)"
+  },
+  "market_score": 27.08,
+  "analysis_details": null
+}
+
+Testing volatility_regimes...
+Status: 200
+{
+  "current_regime": {
+    "id": 1,
+    "volatility": 0.9637544264710479,
+    "characteristics": {
+      "mean_volatility": 0.6999268924472751,
+      "count": 1058,
+      "avg_returns": 0.0011978183106924427,
+      "std_returns": 0.007770928137562942,
+      "period": {
+        "start": "2024-11-01T16:00:00+01:00",
+        "end": "2024-11-13T22:00:00+01:00"
+      }
+    }
+  },
+  "regime_statistics": {
+    "0": {
+      "mean_volatility": 0.20160770594434688,
+      "count": 1278,
+      "avg_returns": 0.0003098386955451908,
+      "std_returns": 0.0025237063026727928,
+      "period": {
+        "start": "2024-10-17T22:00:00+02:00",
+        "end": "2024-11-10T04:00:00+01:00"
+      }
+    },
+    "1": {
+      "mean_volatility": 0.6999268924472751,
+      "count": 1058,
+      "avg_returns": 0.0011978183106924427,
+      "std_returns": 0.007770928137562942,
+      "period": {
+        "start": "2024-11-01T16:00:00+01:00",
+        "end": "2024-11-13T22:00:00+01:00"
+      }
+    },
+    "2": {
+      "mean_volatility": 0.3864710095919248,
+      "count": 3447,
+      "avg_returns": 0.0002599225486253662,
+      "std_returns": 0.004359467490678715,
+      "period": {
+        "start": "2024-10-17T14:00:00+02:00",
+        "end": "2024-11-11T15:00:00+01:00"
+      }
+    }
+  },
+  "transition_probabilities": [
+    [
+      0.9953051643192489,
+      0.0,
+      0.004694835680751174
+    ],
+    [
+      0.0,
+      0.9971617786187322,
+      0.002838221381267739
+    ],
+    [
+      0.0017406440382941688,
+      0.0011604293588627793,
+      0.997098926602843
+    ]
+  ],
+  "regime_duration": {
+    "0": {
+      "mean": 213.0,
+      "max": 486,
+      "min": 18,
+      "std": 188.403821617291
+    },
+    "1": {
+      "mean": 234.0,
+      "max": 333,
+      "min": 117,
+      "std": 89.09545442950498
+    },
+    "2": {
+      "mean": 344.7,
+      "max": 801,
+      "min": 18,
+      "std": 274.1102150595632
+    }
+  },
+  "stability_score": 0.9965415874113782
+}

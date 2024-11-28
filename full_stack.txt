@@ -1,0 +1,125 @@
+crypto-analytics/
+├── backend/                      # 後端服務
+│   ├── app/
+│   │   ├── core/                # 核心配置
+│   │   │   ├── config.py        # 配置文件
+│   │   │   ├── database.py      # 數據庫連接
+│   │   │   ├── logging.py       # 日誌配置
+│   │   │   └── shutdown.py      # 關閉處理
+│   │   │
+│   │   ├── data_collectors/     # 數據採集
+│   │   │   ├── base/           
+│   │   │   │   ├── collector.py # 基礎收集器
+│   │   │   │   └── validator.py # 數據驗證
+│   │   │   └── binance/         # 幣安API對接
+│   │   │       ├── client.py 
+│   │   │       ├── collector.py
+│   │   │       ├── websocket.py
+│   │   │       ├── tasks.py
+│   │   │       ├── historical_collector.py
+│   │   │       └── depth_collector.py
+│   │   │
+│   │   ├── models/            # 數據模型
+│   │   │   ├── market.py      # 市場數據模型
+│   │   │   └── historical.py  # 歷史數據模型
+│   │   │
+│   │   ├── schemas/          # API模式
+│   │   │   ├── market.py
+│   │   │   └── historical.py
+│   │   │
+│   │   ├── services/        # 業務邏輯
+│   │   │   ├── historical/
+│   │   │   │   └── data_service.py
+│   │   │   ├── alert_service.py
+│   │   │   ├── depth_archiver.py
+│   │   │   └── trade_monitor.py
+│   │   │
+│   │   ├── api/             # API路由
+│   │   │   └── v1/
+│   │   │       ├── historical.py 
+│   │   │       ├── market.py
+│   │   │       ├── monitoring.py
+│   │   │       └── trade_monitor.py
+│   │   │
+│   │   ├── monitoring/     # 監控邏輯
+│   │   │   └── depth_monitor.py
+│   │   │
+│   │   └── main.py        # FastAPI 應用入口
+│   │
+│   ├── scripts/           # 執行腳本
+│   │   ├── analyze_market.py
+│   │   ├── backfill_data.py  
+│   │   ├── check_data.py
+│   │   ├── monitor.py
+│   │   ├── run_app.py
+│   │   ├── run_collection.py
+│   │   ├── test_api.py
+│   │   └── test_historical.py
+│   │
+│   ├── alembic/          # 數據庫遷移
+│   ├── requirements.txt  # 依賴管理
+│   └── setup.py         # 安裝配置
+│   
+└── frontend/
+   ├── src/
+   │   ├── app/          # Next.js 頁面
+   │   │   ├── layout.tsx
+   │   │   ├── providers.tsx
+   │   │   ├── market-analysis/    # 市場分析頁面
+   │   │   │   ├── layout.tsx
+   │   │   │   └── page.tsx
+   │   │   │
+   │   │   └── volatility-analysis/ # 波動率分析頁面
+   │   │       ├── layout.tsx
+   │   │       └── page.tsx
+   │   │
+   │   ├── components/
+   │   │   ├── ui/      # 共用UI組件
+   │   │   │   ├── button.tsx
+   │   │   │   ├── card.tsx
+   │   │   │   ├── select.tsx
+   │   │   │   └── ...
+   │   │   │
+   │   │   ├── market-analysis/    # 市場分析組件
+   │   │   │   ├── control-panel/
+   │   │   │   ├── volatility/
+   │   │   │   └── market-state/
+   │   │   │
+   │   │   └── volatility-analysis/ # 波動率分析組件
+   │   │       ├── control-panel/
+   │   │       ├── trend-chart/
+   │   │       ├── statistics/
+   │   │       └── distribution/
+   │   │
+   │   ├── hooks/        # 自定義Hooks
+   │   │   ├── use-market-data.ts
+   │   │   ├── use-volatility.ts
+   │   │   └── use-volatility-data.ts
+   │   │
+   │   ├── lib/         # 工具庫
+   │   │   ├── utils.ts
+   │   │   └── axios-instance.ts
+   │   │
+   │   ├── services/    # API服務
+   │   │   ├── market-analysis/
+   │   │   │   ├── types.ts
+   │   │   │   └── api.ts
+   │   │   │
+   │   │   └── volatility/
+   │   │       └── api.ts
+   │   │
+   │   ├── stores/     # 狀態管理 
+   │   │   ├── market-analysis/
+   │   │   │   └── store.ts
+   │   │   └── volatility-analysis/
+   │   │       └── store.ts
+   │   │
+   │   └── types/    # 類型定義
+   │       └── market.ts
+   │
+   ├── public/      # 靜態資源
+   ├── .env        # 環境變量
+   ├── next.config.js
+   ├── tailwind.config.js 
+   ├── tsconfig.json
+   └── package.json

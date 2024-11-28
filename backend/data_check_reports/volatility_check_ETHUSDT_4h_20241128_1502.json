@@ -1,0 +1,1031 @@
+{
+  "symbol": "ETHUSDT",
+  "timeframe": "4h",
+  "timestamp": "2024-11-28T15:02:53.049047",
+  "findings": [
+    {
+      "type": "duplicates",
+      "details": [
+        {
+          "date": "2024-10-29",
+          "count": 24
+        },
+        {
+          "date": "2024-10-30",
+          "count": 72
+        },
+        {
+          "date": "2024-10-31",
+          "count": 72
+        },
+        {
+          "date": "2024-11-01",
+          "count": 72
+        },
+        {
+          "date": "2024-11-02",
+          "count": 72
+        },
+        {
+          "date": "2024-11-03",
+          "count": 72
+        },
+        {
+          "date": "2024-11-04",
+          "count": 73
+        },
+        {
+          "date": "2024-11-05",
+          "count": 73
+        },
+        {
+          "date": "2024-11-06",
+          "count": 72
+        },
+        {
+          "date": "2024-11-07",
+          "count": 72
+        },
+        {
+          "date": "2024-11-08",
+          "count": 72
+        },
+        {
+          "date": "2024-11-09",
+          "count": 72
+        },
+        {
+          "date": "2024-11-10",
+          "count": 72
+        },
+        {
+          "date": "2024-11-11",
+          "count": 73
+        },
+        {
+          "date": "2024-11-12",
+          "count": 73
+        },
+        {
+          "date": "2024-11-13",
+          "count": 72
+        },
+        {
+          "date": "2024-11-14",
+          "count": 72
+        },
+        {
+          "date": "2024-11-15",
+          "count": 72
+        },
+        {
+          "date": "2024-11-16",
+          "count": 72
+        },
+        {
+          "date": "2024-11-17",
+          "count": 72
+        },
+        {
+          "date": "2024-11-18",
+          "count": 73
+        },
+        {
+          "date": "2024-11-19",
+          "count": 73
+        },
+        {
+          "date": "2024-11-20",
+          "count": 72
+        },
+        {
+          "date": "2024-11-21",
+          "count": 49
+        },
+        {
+          "date": "2024-11-22",
+          "count": 48
+        },
+        {
+          "date": "2024-11-23",
+          "count": 48
+        },
+        {
+          "date": "2024-11-24",
+          "count": 48
+        },
+        {
+          "date": "2024-11-25",
+          "count": 49
+        },
+        {
+          "date": "2024-11-26",
+          "count": 49
+        },
+        {
+          "date": "2024-11-27",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "type": "duplicates",
+      "details": [
+        {
+          "date": "2024-10-29",
+          "count": 6
+        },
+        {
+          "date": "2024-10-30",
+          "count": 18
+        },
+        {
+          "date": "2024-10-31",
+          "count": 18
+        },
+        {
+          "date": "2024-11-01",
+          "count": 18
+        },
+        {
+          "date": "2024-11-02",
+          "count": 18
+        },
+        {
+          "date": "2024-11-03",
+          "count": 18
+        },
+        {
+          "date": "2024-11-04",
+          "count": 18
+        },
+        {
+          "date": "2024-11-05",
+          "count": 18
+        },
+        {
+          "date": "2024-11-06",
+          "count": 18
+        },
+        {
+          "date": "2024-11-07",
+          "count": 18
+        },
+        {
+          "date": "2024-11-08",
+          "count": 18
+        },
+        {
+          "date": "2024-11-09",
+          "count": 18
+        },
+        {
+          "date": "2024-11-10",
+          "count": 18
+        },
+        {
+          "date": "2024-11-11",
+          "count": 18
+        },
+        {
+          "date": "2024-11-12",
+          "count": 18
+        },
+        {
+          "date": "2024-11-13",
+          "count": 18
+        },
+        {
+          "date": "2024-11-14",
+          "count": 18
+        },
+        {
+          "date": "2024-11-15",
+          "count": 18
+        },
+        {
+          "date": "2024-11-16",
+          "count": 18
+        },
+        {
+          "date": "2024-11-17",
+          "count": 18
+        },
+        {
+          "date": "2024-11-18",
+          "count": 18
+        },
+        {
+          "date": "2024-11-19",
+          "count": 18
+        },
+        {
+          "date": "2024-11-20",
+          "count": 18
+        },
+        {
+          "date": "2024-11-21",
+          "count": 12
+        },
+        {
+          "date": "2024-11-22",
+          "count": 12
+        },
+        {
+          "date": "2024-11-23",
+          "count": 12
+        },
+        {
+          "date": "2024-11-24",
+          "count": 12
+        },
+        {
+          "date": "2024-11-25",
+          "count": 12
+        },
+        {
+          "date": "2024-11-26",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "type": "anomalies",
+      "details": [
+        {
+          "timestamp": "2024-10-29T17:00:00+01:00",
+          "volatility": NaN,
+          "volume": 14375.99601
+        },
+        {
+          "timestamp": "2024-10-29T21:00:00+01:00",
+          "volatility": NaN,
+          "volume": 5257.36344
+        },
+        {
+          "timestamp": "2024-10-30T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 3553.7595
+        },
+        {
+          "timestamp": "2024-10-30T05:00:00+01:00",
+          "volatility": NaN,
+          "volume": 3065.87039
+        },
+        {
+          "timestamp": "2024-10-30T09:00:00+01:00",
+          "volatility": NaN,
+          "volume": 3249.22754
+        },
+        {
+          "timestamp": "2024-10-30T13:00:00+01:00",
+          "volatility": NaN,
+          "volume": 7786.81964
+        },
+        {
+          "timestamp": "2024-10-30T17:00:00+01:00",
+          "volatility": NaN,
+          "volume": 3301.81939
+        },
+        {
+          "timestamp": "2024-10-30T21:00:00+01:00",
+          "volatility": NaN,
+          "volume": 5928.4941
+        },
+        {
+          "timestamp": "2024-10-31T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 2955.82677
+        },
+        {
+          "timestamp": "2024-10-31T05:00:00+01:00",
+          "volatility": NaN,
+          "volume": 2300.55532
+        },
+        {
+          "timestamp": "2024-10-31T09:00:00+01:00",
+          "volatility": NaN,
+          "volume": 3129.22143
+        },
+        {
+          "timestamp": "2024-10-31T13:00:00+01:00",
+          "volatility": NaN,
+          "volume": 10391.35314
+        },
+        {
+          "timestamp": "2024-10-31T17:00:00+01:00",
+          "volatility": NaN,
+          "volume": 5987.52232
+        },
+        {
+          "timestamp": "2024-10-31T21:00:00+01:00",
+          "volatility": NaN,
+          "volume": 4587.62399
+        },
+        {
+          "timestamp": "2024-11-01T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 6736.08255
+        },
+        {
+          "timestamp": "2024-11-01T05:00:00+01:00",
+          "volatility": NaN,
+          "volume": 3840.13342
+        },
+        {
+          "timestamp": "2024-11-01T09:00:00+01:00",
+          "volatility": NaN,
+          "volume": 4258.62726
+        },
+        {
+          "timestamp": "2024-11-01T13:00:00+01:00",
+          "volatility": NaN,
+          "volume": 12583.25292
+        },
+        {
+          "timestamp": "2024-11-01T17:00:00+01:00",
+          "volatility": NaN,
+          "volume": 8722.26319
+        },
+        {
+          "timestamp": "2024-11-01T21:00:00+01:00",
+          "volatility": NaN,
+          "volume": 2161.50821
+        }
+      ]
+    },
+    {
+      "type": "duplicates",
+      "details": [
+        {
+          "date": "2024-10-30",
+          "count": 3
+        },
+        {
+          "date": "2024-10-31",
+          "count": 3
+        },
+        {
+          "date": "2024-11-01",
+          "count": 3
+        },
+        {
+          "date": "2024-11-02",
+          "count": 3
+        },
+        {
+          "date": "2024-11-03",
+          "count": 3
+        },
+        {
+          "date": "2024-11-04",
+          "count": 3
+        },
+        {
+          "date": "2024-11-05",
+          "count": 3
+        },
+        {
+          "date": "2024-11-06",
+          "count": 3
+        },
+        {
+          "date": "2024-11-07",
+          "count": 3
+        },
+        {
+          "date": "2024-11-08",
+          "count": 3
+        },
+        {
+          "date": "2024-11-09",
+          "count": 3
+        },
+        {
+          "date": "2024-11-10",
+          "count": 3
+        },
+        {
+          "date": "2024-11-11",
+          "count": 3
+        },
+        {
+          "date": "2024-11-12",
+          "count": 3
+        },
+        {
+          "date": "2024-11-13",
+          "count": 3
+        },
+        {
+          "date": "2024-11-14",
+          "count": 3
+        },
+        {
+          "date": "2024-11-15",
+          "count": 3
+        },
+        {
+          "date": "2024-11-16",
+          "count": 3
+        },
+        {
+          "date": "2024-11-17",
+          "count": 3
+        },
+        {
+          "date": "2024-11-18",
+          "count": 3
+        },
+        {
+          "date": "2024-11-19",
+          "count": 3
+        },
+        {
+          "date": "2024-11-20",
+          "count": 3
+        },
+        {
+          "date": "2024-11-21",
+          "count": 2
+        },
+        {
+          "date": "2024-11-22",
+          "count": 2
+        },
+        {
+          "date": "2024-11-23",
+          "count": 2
+        },
+        {
+          "date": "2024-11-24",
+          "count": 2
+        },
+        {
+          "date": "2024-11-25",
+          "count": 2
+        },
+        {
+          "date": "2024-11-26",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "type": "anomalies",
+      "details": [
+        {
+          "timestamp": "2024-10-30T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 26885.99056
+        },
+        {
+          "timestamp": "2024-10-30T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 26885.99056
+        },
+        {
+          "timestamp": "2024-10-31T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 29352.10297
+        },
+        {
+          "timestamp": "2024-10-31T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 29352.10297
+        },
+        {
+          "timestamp": "2024-11-01T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 38301.86755
+        },
+        {
+          "timestamp": "2024-11-01T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 38301.86755
+        },
+        {
+          "timestamp": "2024-11-02T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 10521.67243
+        },
+        {
+          "timestamp": "2024-11-02T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 10521.67243
+        },
+        {
+          "timestamp": "2024-11-03T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 24995.70243
+        },
+        {
+          "timestamp": "2024-11-03T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 24995.70243
+        },
+        {
+          "timestamp": "2024-11-04T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 29800.39187
+        },
+        {
+          "timestamp": "2024-11-04T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 29800.39187
+        },
+        {
+          "timestamp": "2024-11-05T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 33355.06888
+        },
+        {
+          "timestamp": "2024-11-05T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 33355.06888
+        },
+        {
+          "timestamp": "2024-11-06T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 104126.994787
+        },
+        {
+          "timestamp": "2024-11-06T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 104126.994787
+        },
+        {
+          "timestamp": "2024-11-07T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 44869.422345
+        },
+        {
+          "timestamp": "2024-11-07T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 44869.422345
+        },
+        {
+          "timestamp": "2024-11-08T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 36521.099583
+        },
+        {
+          "timestamp": "2024-11-08T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 36521.099583
+        },
+        {
+          "timestamp": "2024-11-09T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 16942.07915
+        },
+        {
+          "timestamp": "2024-11-09T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 16942.07915
+        },
+        {
+          "timestamp": "2024-11-10T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 61830.100435
+        },
+        {
+          "timestamp": "2024-11-10T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 61830.100435
+        },
+        {
+          "timestamp": "2024-11-11T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 82323.665776
+        },
+        {
+          "timestamp": "2024-11-11T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 82323.665776
+        },
+        {
+          "timestamp": "2024-11-12T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 97299.887911
+        },
+        {
+          "timestamp": "2024-11-12T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 97299.887911
+        },
+        {
+          "timestamp": "2024-11-13T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 86763.854127
+        },
+        {
+          "timestamp": "2024-11-13T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 86763.854127
+        },
+        {
+          "timestamp": "2024-11-14T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 56729.51086
+        },
+        {
+          "timestamp": "2024-11-14T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 56729.51086
+        },
+        {
+          "timestamp": "2024-11-15T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 47927.95068
+        },
+        {
+          "timestamp": "2024-11-15T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 47927.95068
+        },
+        {
+          "timestamp": "2024-11-16T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 22717.87689
+        },
+        {
+          "timestamp": "2024-11-16T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 22717.87689
+        },
+        {
+          "timestamp": "2024-11-17T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 23867.55609
+        },
+        {
+          "timestamp": "2024-11-18T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 46545.03448
+        },
+        {
+          "timestamp": "2024-11-19T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 43660.04682
+        },
+        {
+          "timestamp": "2024-11-20T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 42043.449322
+        }
+      ]
+    },
+    {
+      "type": "duplicates",
+      "details": [
+        {
+          "date": "2024-10-29",
+          "count": 24
+        },
+        {
+          "date": "2024-10-30",
+          "count": 72
+        },
+        {
+          "date": "2024-10-31",
+          "count": 72
+        },
+        {
+          "date": "2024-11-01",
+          "count": 72
+        },
+        {
+          "date": "2024-11-02",
+          "count": 72
+        },
+        {
+          "date": "2024-11-03",
+          "count": 72
+        },
+        {
+          "date": "2024-11-04",
+          "count": 73
+        },
+        {
+          "date": "2024-11-05",
+          "count": 73
+        },
+        {
+          "date": "2024-11-06",
+          "count": 72
+        },
+        {
+          "date": "2024-11-07",
+          "count": 72
+        },
+        {
+          "date": "2024-11-08",
+          "count": 72
+        },
+        {
+          "date": "2024-11-09",
+          "count": 72
+        },
+        {
+          "date": "2024-11-10",
+          "count": 72
+        },
+        {
+          "date": "2024-11-11",
+          "count": 73
+        },
+        {
+          "date": "2024-11-12",
+          "count": 73
+        },
+        {
+          "date": "2024-11-13",
+          "count": 72
+        },
+        {
+          "date": "2024-11-14",
+          "count": 72
+        },
+        {
+          "date": "2024-11-15",
+          "count": 72
+        },
+        {
+          "date": "2024-11-16",
+          "count": 72
+        },
+        {
+          "date": "2024-11-17",
+          "count": 72
+        },
+        {
+          "date": "2024-11-18",
+          "count": 73
+        },
+        {
+          "date": "2024-11-19",
+          "count": 73
+        },
+        {
+          "date": "2024-11-20",
+          "count": 72
+        },
+        {
+          "date": "2024-11-21",
+          "count": 49
+        },
+        {
+          "date": "2024-11-22",
+          "count": 48
+        },
+        {
+          "date": "2024-11-23",
+          "count": 48
+        },
+        {
+          "date": "2024-11-24",
+          "count": 48
+        },
+        {
+          "date": "2024-11-25",
+          "count": 49
+        },
+        {
+          "date": "2024-11-26",
+          "count": 49
+        },
+        {
+          "date": "2024-11-27",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "type": "duplicates",
+      "details": [
+        {
+          "date": "2024-10-29",
+          "count": 6
+        },
+        {
+          "date": "2024-10-30",
+          "count": 18
+        },
+        {
+          "date": "2024-10-31",
+          "count": 18
+        },
+        {
+          "date": "2024-11-01",
+          "count": 18
+        },
+        {
+          "date": "2024-11-02",
+          "count": 18
+        },
+        {
+          "date": "2024-11-03",
+          "count": 18
+        },
+        {
+          "date": "2024-11-04",
+          "count": 18
+        },
+        {
+          "date": "2024-11-05",
+          "count": 18
+        },
+        {
+          "date": "2024-11-06",
+          "count": 18
+        },
+        {
+          "date": "2024-11-07",
+          "count": 18
+        },
+        {
+          "date": "2024-11-08",
+          "count": 18
+        },
+        {
+          "date": "2024-11-09",
+          "count": 18
+        },
+        {
+          "date": "2024-11-10",
+          "count": 18
+        },
+        {
+          "date": "2024-11-11",
+          "count": 18
+        },
+        {
+          "date": "2024-11-12",
+          "count": 18
+        },
+        {
+          "date": "2024-11-13",
+          "count": 18
+        },
+        {
+          "date": "2024-11-14",
+          "count": 18
+        },
+        {
+          "date": "2024-11-15",
+          "count": 18
+        },
+        {
+          "date": "2024-11-16",
+          "count": 18
+        },
+        {
+          "date": "2024-11-17",
+          "count": 18
+        },
+        {
+          "date": "2024-11-18",
+          "count": 18
+        },
+        {
+          "date": "2024-11-19",
+          "count": 18
+        },
+        {
+          "date": "2024-11-20",
+          "count": 18
+        },
+        {
+          "date": "2024-11-21",
+          "count": 12
+        },
+        {
+          "date": "2024-11-22",
+          "count": 12
+        },
+        {
+          "date": "2024-11-23",
+          "count": 12
+        },
+        {
+          "date": "2024-11-24",
+          "count": 12
+        },
+        {
+          "date": "2024-11-25",
+          "count": 12
+        },
+        {
+          "date": "2024-11-26",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "type": "anomalies",
+      "details": [
+        {
+          "timestamp": "2024-10-29T17:00:00+01:00",
+          "volatility": NaN,
+          "volume": 118181.9834
+        },
+        {
+          "timestamp": "2024-10-29T21:00:00+01:00",
+          "volatility": NaN,
+          "volume": 48660.9933
+        },
+        {
+          "timestamp": "2024-10-30T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 58651.4667
+        },
+        {
+          "timestamp": "2024-10-30T05:00:00+01:00",
+          "volatility": NaN,
+          "volume": 56092.6306
+        },
+        {
+          "timestamp": "2024-10-30T09:00:00+01:00",
+          "volatility": NaN,
+          "volume": 73414.7548
+        },
+        {
+          "timestamp": "2024-10-30T13:00:00+01:00",
+          "volatility": NaN,
+          "volume": 149492.5606
+        },
+        {
+          "timestamp": "2024-10-30T17:00:00+01:00",
+          "volatility": NaN,
+          "volume": 51758.8372
+        },
+        {
+          "timestamp": "2024-10-30T21:00:00+01:00",
+          "volatility": NaN,
+          "volume": 71216.8761
+        },
+        {
+          "timestamp": "2024-10-31T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 44745.4639
+        },
+        {
+          "timestamp": "2024-10-31T05:00:00+01:00",
+          "volatility": NaN,
+          "volume": 30494.4159
+        },
+        {
+          "timestamp": "2024-10-31T09:00:00+01:00",
+          "volatility": NaN,
+          "volume": 49785.3798
+        },
+        {
+          "timestamp": "2024-10-31T13:00:00+01:00",
+          "volatility": NaN,
+          "volume": 138890.8756
+        },
+        {
+          "timestamp": "2024-10-31T17:00:00+01:00",
+          "volatility": NaN,
+          "volume": 86177.7516
+        },
+        {
+          "timestamp": "2024-10-31T21:00:00+01:00",
+          "volatility": NaN,
+          "volume": 53333.3149
+        },
+        {
+          "timestamp": "2024-11-01T01:00:00+01:00",
+          "volatility": NaN,
+          "volume": 86691.3327
+        },
+        {
+          "timestamp": "2024-11-01T05:00:00+01:00",
+          "volatility": NaN,
+          "volume": 43728.3342
+        },
+        {
+          "timestamp": "2024-11-01T09:00:00+01:00",
+          "volatility": NaN,
+          "volume": 50334.2681
+        },
+        {
+          "timestamp": "2024-11-01T13:00:00+01:00",
+          "volatility": NaN,
+          "volume": 148101.0589
+        },
+        {
+          "timestamp": "2024-11-01T17:00:00+01:00",
+          "volatility": NaN,
+          "volume": 70817.1562
+        },
+        {
+          "timestamp": "2024-11-01T21:00:00+01:00",
+          "volatility": NaN,
+          "volume": 30576.9572
+        }
+      ]
+    }
+  ]
+}

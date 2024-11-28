@@ -1,0 +1,128 @@
+crypto-analytics/
+├── backend/                      # 後端服務
+│   ├── app/
+│   │   ├── core/                # 核心配置
+│   │   │   ├── config.py        # 配置文件
+│   │   │   ├── database.py      # 數據庫連接
+│   │   │   └── logging.py       # 日誌配置
+│   │   ├── data_collectors/     # 數據採集
+│   │   │   ├── base/           # 基礎收集器
+│   │   │   │   ├── collector.py  # 基礎收集器類
+│   │   │   │   └── validator.py  # 數據驗證基類
+│   │   │   ├── binance/         # 幣安API
+│   │   │   │   ├── collector.py   # 實時數據收集實現
+│   │   │   │   ├── client.py      # API客戶端
+│   │   │   │   ├── websocket.py   # WebSocket客戶端
+│   │   │   │   ├── tasks.py       # 定時任務
+│   │   │   │   ├── historical_collector.py  【新】歷史數據收集器
+│   │   │   │   ├── historical_tasks.py      【新】歷史數據任務
+│   │   │   │   └── historical_websocket.py  【新】歷史數據WebSocket
+│   │   │   ├── coingecko/       # CoinGecko API
+│   │   │   └── coinmarketcap/   # CoinMarketCap API
+│   │   ├── models/              # 數據模型
+│   │   │   ├── market.py        # 市場數據模型
+│   │   │   ├── historical.py    【新】歷史數據模型
+│   │   │   ├── analytics.py     # 分析數據模型
+│   │   │   └── sentiment.py     # 情緒數據模型
+│   │   ├── schemas/             # 數據架構
+│   │   │   ├── market.py        # 市場數據結構
+│   │   │   ├── historical.py    【新】歷史數據結構
+│   │   │   ├── analytics.py     # 分析數據結構
+│   │   │   └── sentiment.py     # 情緒數據結構
+│   │   ├── services/            # 業務服務
+│   │   │   ├── market/          # 市場數據服務
+│   │   │   │   ├── collector.py # 數據收集服務
+│   │   │   │   ├── validator.py # 數據驗證服務
+│   │   │   │   └── monitor.py   # 監控服務
+│   │   │   ├── historical/      【新】歷史數據服務
+│   │   │   │   ├── data_service.py    # 數據處理服務
+│   │   │   │   ├── storage_service.py # 存儲服務
+│   │   │   │   ├── sync_service.py    # 數據同步服務
+│   │   │   │   └── cleanup_service.py # 數據清理服務
+│   │   │   ├── analytics.py     # 分析服務
+│   │   │   └── sentiment.py     # 情緒分析服務
+│   │   ├── api/                 # API路由
+│   │   │   └── v1/
+│   │   │       ├── market.py
+│   │   │       ├── historical.py  【新】歷史數據API
+│   │   │       ├── analytics.py
+│   │   │       └── sentiment.py
+│   │   └── utils/               # 工具函數
+│   │       ├── indicators.py    # 技術指標
+│   │       ├── validators.py    # 數據驗證
+│   │       ├── time_utils.py    【新】時間處理工具
+│   │       └── helpers.py       # 輔助函數
+│   ├── scripts/                 # 執行腳本
+│   │   ├── run_collection.py    # 數據收集
+│   │   ├── run_historical.py    【新】歷史數據收集
+│   │   ├── backfill_data.py    【新】歷史數據回填
+│   │   ├── monitor.py          # 監控腳本
+│   │   └── check_data.py       # 數據檢查
+│   ├── tests/                   # 測試文件
+│   │   ├── collectors/         # 收集器測試
+│   │   │   └── historical/     【新】歷史數據收集測試
+│   │   ├── services/          # 服務測試
+│   │   │   └── historical/    【新】歷史服務測試
+│   │   └── utils/             # 工具測試
+│   ├── alembic/                # 數據庫遷移
+│   └── docker/                 # Docker配置
+│
+└── frontend/
+├── src/
+│   ├── app/                      # Next.js App Router
+│   │   ├── layout.tsx           # Root layout
+│   │   ├── providers.tsx        # 全局 Provider
+│   │   └── market-analysis/     # 市場分析頁面
+│   │       ├── layout.tsx       # 分析頁面布局
+│   │       └── page.tsx         # 主頁面
+│   │
+│   ├── components/              # 共用組件
+│   │   ├── ui/                  # 基礎 UI 組件
+│   │   │   ├── button.tsx
+│   │   │   ├── card.tsx
+│   │   │   ├── select.tsx
+│   │   │   └── ...
+│   │   │
+│   │   └── market-analysis/     # 業務組件
+│   │       ├── control-panel/
+│   │       │   ├── index.tsx
+│   │       │   ├── pair-selector.tsx
+│   │       │   └── timeframe-selector.tsx
+│   │       │
+│   │       ├── volatility/
+│   │       │   ├── index.tsx
+│   │       │   ├── trend-chart.tsx
+│   │       │   └── metrics-card.tsx
+│   │       │
+│   │       └── market-state/
+│   │           ├── index.tsx
+│   │           └── state-chart.tsx
+│   │
+│   ├── hooks/                   # 自定義 Hooks
+│   │   ├── use-market-data.ts
+│   │   └── use-volatility.ts
+│   │
+│   ├── lib/                     # 工具庫
+│   │   ├── utils.ts             # 通用工具函數
+│   │   └── axios-instance.ts    # axios 實例配置
+│   │
+│   ├── services/                # API 服務
+│   │   └── market-analysis/
+│   │       ├── types.ts         # API 類型定義
+│   │       └── api.ts           # API 請求函數
+│   │
+│   ├── stores/                  # 狀態管理
+│   │   └── market-analysis/
+│   │       └── store.ts
+│   │
+│   └── types/                   # 全局類型定義
+│       └── market.ts
+│
+├── public/                      # 靜態資源
+│
+├── .env                         # 環境變量
+├── .env.local                   # 本地環境變量
+├── next.config.js              # Next.js 配置
+├── tailwind.config.js          # Tailwind CSS 配置
+├── tsconfig.json               # TypeScript 配置
+└── package.json                # 項目依賴

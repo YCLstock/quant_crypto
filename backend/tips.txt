@@ -1,0 +1,24 @@
+cd D:\postgres\bin
+路徑 資料庫
+-- 列出所有表
+\dt
+
+-- 查看某個特定表的結構
+\d exchanges
+\d trading_pairs
+\d market_data
+\d order_books
+
+-- 查看alembic的版本記錄表
+\d alembic_version
+
+\q
+
+# 回滾到上一個版本
+alembic downgrade -1
+
+# 或者回滾到特定版本
+alembic downgrade <revision_id>
+
+python -m venv venv
+venv\Scripts\activate  # 在 Windows 上
